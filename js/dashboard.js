@@ -1,5 +1,6 @@
+import { UserProfile } from "./profile.js";
+import { checkEligibility } from "./eligibility.js";
 let userAddress = null;
-
 // 1️⃣ Wallet Connect (Base-compatible)
 async function connectWallet() {
   if (!window.ethereum) {
