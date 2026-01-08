@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Airdrop CheckMate — Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Base App Verification -->
+  <meta name="base:app_id" content="69401eb7d19763ca26ddc30c" />
+
+  <!-- Base OnchainKit (official CDN) -->
+  <script src="https://unpkg.com/@coinbase/onchainkit@latest/dist/onchainkit.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: #0a0f2c;
+      color: white;
+    }
+    header {
+      padding: 20px 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 24px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background: #ffffff;
+      color: #0b1cff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+    .btn.secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .airdrop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .airdrop:last-child {
+      border-bottom: none;
+    }
+    .tag {
+      background: #00ffcc;
+      color: #001;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <strong>♟️ Airdrop CheckMate</strong>
+    <div>
+      <button class="btn secondary" onclick="connectFarcaster()">Farcaster</button>
+      <button class="btn" onclick="connectWallet()">Connect Wallet</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h3>Your Wallet</h3>
+      <p id="wallet">Not connected</p>
+    </div>
+
+    <div class="card">
+      <h3>Eligible Airdrops</h3>
+      <div id="airdrops">
+        <p>Connect your wallet to scan.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
