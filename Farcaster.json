@@ -1,0 +1,9 @@
+{
+  "name": "Airdrop CheckMate",
+  "description": "Base-native airdrop discovery and claiming platform",
+  "icon": "/icon.png",
+  "url": "https://airdropcheckmate.lovable.app",
+  "permissions": {
+    "notifications": true
+  }
+}
