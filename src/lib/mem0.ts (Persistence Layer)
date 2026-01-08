@@ -1,0 +1,26 @@
+const MEM0_API_KEY = 'mem_0babf18d0fb1506967f4d7aa1d5fcb687139aeb54d94239c';
+const BASE_URL = 'https://api.mem0.ai/v1'; // Standard Mem0 endpoint
+
+export const memoryService = {
+  async saveUserProfile(userId: string, data: any) {
+    const response = await fetch(`${BASE_URL}/memories/`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Token ${MEM0_API_KEY}`
+      },
+      body: JSON.stringify({
+        messages: [{ role: "user", content: JSON.stringify(data) }],
+        user_id: userId
+      })
+    });
+    return response.json();
+  },
+
+  async getUserHistory(userId: string) {
+    const response = await fetch(`${BASE_URL}/memories/?user_id=${userId}`, {
+      headers: { 'Authorization': `Token ${MEM0_API_KEY}` }
+    });
+    return response.json();
+  }
+};
