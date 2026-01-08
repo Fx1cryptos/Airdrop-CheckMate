@@ -1,0 +1,19 @@
+{
+  "name": "Airdrop CheckMate",
+  "description": "Discover and claim missed onchain airdrops on Base",
+  "app_id": "69401eb7d19763ca26ddc30c",
+  "chain": "base",
+  "version": "1.0.0",
+  "homepage": "https://airdropcheckmate.lovable.app",
+  "permissions": {
+    "wallet": "read",
+    "transactions": "user-signed"
+  },
+  "icons": {
+    "default": "/icon.png"
+  },
+  "developer": {
+    "name": "Airdrop CheckMate",
+    "url": "https://airdropcheckmate.lovable.app"
+  }
+}
