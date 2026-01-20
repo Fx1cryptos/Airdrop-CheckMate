@@ -1,39 +1,51 @@
-# ♟️ Airdrop CheckMate
+# FX1 Airdrop Checkmate
 
-**The Strategic Command Center for Value Discovery on Base.**
+Track Unclaimed Airdrops. Discover Hidden Value. Stay Early.
 
-🚀 Vision
+FX1 Airdrop Checkmate is a professional Web3 dashboard built on Base that helps users discover and track unclaimed airdrops across multiple blockchains including Ethereum, Solana, Base, Arbitrum, and more.
 
-In the Base ecosystem, thousands of users interact with high-quality protocols daily, yet significant value in the form of airdrops, grants, and creator rewards often remains unclaimed. **Airdrop CheckMate** is a professional-grade analytics dashboard designed to bridge this gap. 
+## Features
 
-By synchronizing multi-wallet onchain history with social identity (Farcaster & X), the platform provides a comprehensive "Checkmate Analysis" to ensure you never miss a value-distribution event again.
+- **Live Multi-Chain Scanning**: Real-time eligibility detection via Daylight API across 10+ chains.
+- **Professional Wallet Connection**: Integrated RainbowKit (EVM) and Solana Wallet Adapter for seamless multi-chain access.
+- **Security Interstitial Modals**: Verified safety checks before redirecting to official claim pages.
+- **FDH Verified Badges**: Trust signals powered by FX1 Digital Hubs intelligence.
+- **Wallet Insights**: Advanced activity scoring and early adopter badges.
+- **Farming Checklist**: Optimize your wallet for future rewards with protocol-specific tasks.
+- **Premium UI**: Dark-mode native, high-fidelity design with Base-blue branding.
 
----
+## Tech Stack
 
-## ✨ Key Features
+- **React + Vite**
+- **TypeScript**
+- **Tailwind CSS**
+- **RainbowKit / Wagmi / Viem** (EVM)
+- **Solana Web3.js** (Solana)
+- **Daylight API** (Onchain Intelligence)
+- **Framer Motion** (Animations)
+- **TanStack Query** (State Management)
 
-* **Unified Multi-Wallet Profiles:** Link and monitor multiple EVM addresses under a single professional dashboard.
-* **Social Graph Sync:** Integrate **Farcaster** and **X (Twitter)** accounts to unlock identity-based eligibility.
-* **Deep Memory Analysis:** Leverages the **Memory Protocol API** to cross-reference historical interactions with airdrop parameters.
-* **Airdrop Categorization:**
-    * 💰 **Tokens:** Protocol governance and utility tokens.
-    * 🖼️ **NFTs:** Exclusive mints and allowlist rewards.
-    * 🐸 **Memes:** Community-driven ecosystem drops.
-    * 💎 **Creator Coins:** Social-token specific rewards.
-    * 🏗️ **Base Grants:** Builder-focused funding opportunities.
-* **Base-Native UX:** Built with **OnchainKit** and styled with a signature Royal Blue (#0405aa) and White palette for a premium, bold feel.
+## Getting Started
 
----
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
+3. Set up environment variables:
+   Create a `.env.local` file with the following:
+   ```env
+   VITE_WALLETCONNECT_PROJECT_ID=your_project_id
+   VITE_DAYLIGHT_API_KEY=your_daylight_api_key
+   ```
+4. Start the development server:
+   ```bash
+   bun run dev
+   ```
 
-## 🛠️ Technical Stack
+## Branding
 
-- **Frontend:** [Next.js](https://nextjs.org/) (App Router), [Tailwind CSS](https://tailwindcss.com/)
-- **Web3 Identity:** [@coinbase/onchainkit](https://onchainkit.xyz/), [Privy](https://privy.io/)
-- **Data Engine:** [Memory Protocol API](https://base.org)
-- **Deployment:** Vercel (Optimized for Base)
+**FX1 Digital Hubs**
+"Building Onchain Tools for the Future"
 
-2. Installation
-```bash
-git clone [https://github.com/Fx1cryptos/Airdrop-CheckMate.git](https://github.com/Fx1cryptos/Airdrop-CheckMate.git)
-cd Airdrop-CheckMate
-npm install
+Powered by FX1 Digital Hubs • Built on Base
